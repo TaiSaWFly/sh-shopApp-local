@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import Button from "../../../common/buttonComponent/Button";
-import Price from "../../../common/priceComponent/price";
+import Button from "../../../common/ButtonComponent/Button";
+import Price from "../../../common/PriceComponent/Price";
 import style from "./basketDropdown.module.scss";
 import {
   decrementBasketElement,

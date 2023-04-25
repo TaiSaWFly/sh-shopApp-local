@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./reviewsList.module.scss";
-import Review from "../review/review";
+import Review from "../Review/Review";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { deleteReview } from "../../../../store/slices/review";
@@ -30,7 +30,8 @@ const ReviewsList = ({ reviews, isAdd, isLoggedIn }) => {
                   If you want to add review? You must{" "}
                   <Link
                     className={style.empty_reviews_list__link}
-                    to="/auth/signup">
+                    to="/auth/signup"
+                  >
                     Rerister Account
                   </Link>{" "}
                   !

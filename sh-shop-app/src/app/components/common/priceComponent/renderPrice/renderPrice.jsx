@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./renderPrice.module.scss";
-import Price from "../price";
+import Price from "../Price";
 
 const RenderPrice = ({ prices }) => {
   return (

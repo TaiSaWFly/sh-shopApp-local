@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import style from "./shopsNewsletter.module.scss";
 import TitleComponent from "../../../common/TitleComponent/TitleComponent";
-import Button from "../../../common/buttonComponent/Button";
+import Button from "../../../common/ButtonComponent/Button";
 
 const emptyField = { email: "" };
 

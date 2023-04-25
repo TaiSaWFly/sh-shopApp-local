@@ -2,10 +2,10 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { getProductLoadingStatus } from "../../../../store/slices/product";
-import ProductDescriptionShort from "../../../common/productDescriptionShort/productDescriptionShort";
+import ProductDescriptionShort from "../../../common/ProductDescriptionShort/ProductDescriptionShort";
 import style from "./productItems.module.scss";
 import Loading from "../../../common/LoadingComponent/Loading";
-import BasketChevronQuantity from "../../../common/chevrons/BasketChevronQuantity/BasketChevronQuantity";
+import BasketChevronQuantity from "../../../common/Chevrons/BasketChevronQuantity/BasketChevronQuantity";
 
 const ProductItems = ({ productsItems: products }) => {
   const history = useHistory();

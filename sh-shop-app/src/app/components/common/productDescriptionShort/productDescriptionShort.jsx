@@ -1,7 +1,7 @@
 import React from "react";
 import { formatTextByQuantitySentences } from "../../../utils/formatTextByQuantitySentences";
-import RenderPrice from "../priceComponent/renderPrice/renderPrice";
-import ProductListActions from "../productListActions/productListActions";
+import RenderPrice from "../PriceComponent/RenderPrice/RenderPrice";
+import ProductListActions from "../ProductListActions/ProductListActions";
 import style from "./productDescriptionShort.module.scss";
 
 const ProductDescriptionShort = ({
@@ -25,7 +25,8 @@ const ProductDescriptionShort = ({
     <div className={style.description}>
       <div
         style={titleSize ? fontSizeTitle : null}
-        className={style.description_title}>
+        className={style.description_title}
+      >
         {name}
       </div>
 
@@ -33,7 +34,8 @@ const ProductDescriptionShort = ({
 
       <div
         style={textSize ? fontSizeText : null}
-        className={style.product_description}>
+        className={style.product_description}
+      >
         {QTYSentences
           ? formatTextByQuantitySentences(description, QTYSentences)
           : formatTextByQuantitySentences(description, 3)}

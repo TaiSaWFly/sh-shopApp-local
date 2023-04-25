@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import style from "./productCardPage.module.scss";
-import ProductImage from "../../../ui/ProductCard/productImage/productImage";
-import ProductTitle from "../.././../ui/ProductCard/productTitle/productTitle";
-import ProductDescription from "../../../ui/ProductCard/productDescription/productDescription";
-import ProductSize from "../../../ui/ProductCard/productSize/productSize";
-import ProducsColor from "../../../ui/ProductCard/producsColor/producsColor";
-import RenderPrice from "../../../common/priceComponent/renderPrice/renderPrice";
-import withBasketAction from "../../../../hoc/basketHoc/withBasketAction";
-import AddBasketButton from "../../../common/buttonComponent/addBasketButton/addBasketButton";
+import ProductImage from "../../../ui/ProductCard/ProductImage/ProductImage";
+import ProductTitle from "../../../ui/ProductCard/ProductTitle/ProductTitle";
+import ProductDescription from "../../../ui/ProductCard/ProductDescription/ProductDescription";
+import ProductSize from "../../../ui/ProductCard/ProductSize/ProductSize";
+import ProducsColor from "../../../ui/ProductCard/ProducsColor/ProducsColor";
+import RenderPrice from "../../../common/PriceComponent/RenderPrice/RenderPrice";
+import withBasketAction from "../../../hoc/BasketHoc/withBasketAction";
+import AddBasketButton from "../../../common/ButtonComponent/AddBasketButton/AddBasketButton";
 
 const ProductCardPage = ({ product, productId }) => {
   const {

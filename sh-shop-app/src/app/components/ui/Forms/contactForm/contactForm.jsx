@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Button from "../../../common/buttonComponent/Button";
+import Button from "../../../common/ButtonComponent/Button";
 import SelectField from "../../../common/FieldCommonents/SelectField/SelectField";
-import TextAreaField from "../../../common/FieldCommonents/textAreaField/textAreaField";
+import TextAreaField from "../../../common/FieldCommonents/TextAreaField/TextAreaField";
 import TextField from "../../../common/FieldCommonents/TextField/TextField";
 import style from "./contactForm.module.scss";
 

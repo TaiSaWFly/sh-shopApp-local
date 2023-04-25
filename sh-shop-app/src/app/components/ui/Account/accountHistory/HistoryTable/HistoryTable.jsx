@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import BackButton from "../../../../common/buttonComponent/BackButton";
-import Table from "../../../../common/tableComponent/table/table";
+import BackButton from "../../../../common/ButtonComponent/BackButton";
+import Table from "../../../../common/TableComponent/Table/Table";
 import HistoryProducts from "../historyProducts/historyProducts";
 import style from "./historyTable.module.scss";
 import { parseDate } from "../../../../../utils/parseDate";
 import Loading from "../../../../common/LoadingComponent/Loading";
-import Price from "../../../../common/priceComponent/price";
+import Price from "../../../../common/PriceComponent/Price";
 import { useDispatch, useSelector } from "react-redux";
 import {
   getIsLoadingStatusHistory,

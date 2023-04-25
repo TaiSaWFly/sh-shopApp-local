@@ -1,8 +1,8 @@
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import ComponentContainer from "../common/ComponentContainer/ComponentContainer";
-import AllProductsPage from "../page/AllProductsPage/allProductsPage";
-import CollectionPage from "../page/CollectionPage/collectionPage";
+import AllProductsPage from "../page/AllProductsPage/AllProductsPage";
+import CollectionPage from "../page/CollectionPage/CollectionPage";
 
 const CollectionLayout: React.FC = () => {
   return (

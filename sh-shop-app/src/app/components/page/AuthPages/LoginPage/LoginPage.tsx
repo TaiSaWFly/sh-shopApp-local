@@ -3,7 +3,7 @@ import { Link, useHistory } from "react-router-dom";
 import style from "./loginPage.module.scss";
 import TitleComponent from "../../../common/TitleComponent/TitleComponent";
 import TextField from "../../../common/FieldCommonents/TextField/TextField";
-import Button from "../../../common/buttonComponent/Button";
+import Button from "../../../common/ButtonComponent/Button";
 import { loginSchema } from "../../../../utils/yupSchema";
 import { useSelector } from "react-redux";
 import {

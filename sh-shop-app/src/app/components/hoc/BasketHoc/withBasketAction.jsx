@@ -4,8 +4,8 @@ import {
   addProductToBasket,
   getIsExistingProductInBasket,
   getQtyProductsBasket,
-} from "../../store/slices/basket";
-import { getProductByIds } from "../../store/slices/product";
+} from "../../../store/slices/basket";
+import { getProductByIds } from "../../../store/slices/product";
 
 const withBasketAction =
   (Component) =>

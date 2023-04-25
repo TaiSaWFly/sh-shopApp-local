@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import style from "./review.module.scss";
-import UserReviewer from "../userReviewer/userReviewer";
+import UserReviewer from "../UserReviewer/UserReviewer";
 import { displayDate } from "../../../../utils/displayDate";
 import Loading from "../../../common/LoadingComponent/Loading";
 import userService from "../../../../services/user.service";
-import Button from "../../../common/buttonComponent/Button";
+import Button from "../../../common/ButtonComponent/Button";
 import { useSelector } from "react-redux";
 import { getAuthUserId } from "../../../../store/slices/user";
 

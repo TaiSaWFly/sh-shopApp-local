@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import withProductFilter from "../../../hoc/withProductFilter/withProductFilter";
+import withProductFilter from "../../hoc/WithProductFilter/withProductFilter";
 import { getCategoryByPath } from "../../../store/slices/category";
 import { getCollectionCategoryByPath } from "../../../store/slices/collectionCategory";
 import { removeFilterData } from "../../../store/slices/filterMemory";

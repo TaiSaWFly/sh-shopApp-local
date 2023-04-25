@@ -4,7 +4,7 @@ import { ReactComponent as Edit } from "../../../../../../node_modules/bootstrap
 import { ReactComponent as Favourite } from "../../../../../../node_modules/bootstrap-icons/icons/heart-half.svg";
 import { ReactComponent as History } from "../../../../../../node_modules/bootstrap-icons/icons/hourglass-split.svg";
 import { ReactComponent as Basket } from "../../../../../../node_modules/bootstrap-icons/icons/basket3-fill.svg";
-import FavouriteChevronQuantity from "../../../common/chevrons/favouriteChevronQuantity/favouriteChevronQuantity";
+import FavouriteChevronQuantity from "../../../common/Chevrons/FavouriteChevronQuantity/FavouriteChevronQuantity";
 // import BasketChevronQuantity from "../../../common/chevrons/basketChevronQuantity/basketChevronQuantity";
 
 type AccountMenus = {

@@ -4,16 +4,16 @@ import { Redirect, Route, Switch, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import ComponentContainer from "../../common/ComponentContainer/ComponentContainer";
 import Loading from "../../common/LoadingComponent/Loading";
-import ProductCardPage from "../../page/ProductCardPages/productCardPage/productCardPage";
-import ProductDescriptionPage from "../../page/ProductCardPages/productDescriptionPage/productDescriptionPage";
-import ReviewsPage from "../../page/ProductCardPages/reviewsPage/reviewsPage";
+import ProductCardPage from "../../page/ProductCardPages/ProductCardPage/ProductCardPage";
+import ProductDescriptionPage from "../../page/ProductCardPages/ProductDescriptionPage/ProductDescriptionPage";
+import ReviewsPage from "../../page/ProductCardPages/ReviewsPage/ReviewsPage";
 import style from "./productCardLayout.module.scss";
 import {
   getProductByIds,
   getProductError,
   loadProductByIds,
 } from "../../../store/slices/product";
-import NoProduct from "../../ui/ProductCard/noProduct/noProduct";
+import NoProduct from "../../ui/ProductCard/NoProduct/NoProduct";
 
 const ProductCardLayout = () => {
   const { productId } = useParams();

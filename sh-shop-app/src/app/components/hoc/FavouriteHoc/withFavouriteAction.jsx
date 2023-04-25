@@ -1,6 +1,9 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getIsFavourite, toggleFavourite } from "../../store/slices/favourite";
+import {
+  getIsFavourite,
+  toggleFavourite,
+} from "../../../store/slices/favourite";
 
 const withFavouriteAction =
   (Component) =>

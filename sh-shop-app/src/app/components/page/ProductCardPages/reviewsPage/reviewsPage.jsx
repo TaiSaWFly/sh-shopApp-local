@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import style from "./reviewsPage.module.scss";
-import ReviewsList from "../../../ui/Reviews/reviewsList/reviewsList";
+import ReviewsList from "../../../ui/Reviews/ReviewsList/ReviewsList";
 import _ from "lodash";
-import AddReview from "../../../ui/Reviews/addReview/addReview";
-import Button from "../../../common/buttonComponent/Button";
+import AddReview from "../../../ui/Reviews/AddReview/AddReview";
+import Button from "../../../common/ButtonComponent/Button";
 import Loading from "../../../common/LoadingComponent/Loading";
 import { useDispatch, useSelector } from "react-redux";
 import {

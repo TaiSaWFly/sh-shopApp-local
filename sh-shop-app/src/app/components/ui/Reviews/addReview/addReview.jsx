@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { getUser } from "../../../../store/slices/user";
 import AddReviewForm from "../../Forms/addReviewForm/addReviewForm";
-import UserReviewer from "../userReviewer/userReviewer";
+import UserReviewer from "../UserReviewer/UserReviewer";
 import style from "./addReview.module.scss";
 
 const AddReview = ({ onSubmit }) => {

@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./dropdownPopularDescription.module.scss";
-import ProductDescriptionShort from "../../../../common/productDescriptionShort/productDescriptionShort";
+import ProductDescriptionShort from "../../../../common/ProductDescriptionShort/ProductDescriptionShort";
 import { CSSTransition } from "react-transition-group";
 
 const DropdownPopularDescription = ({ product, dropdown }) => {
@@ -20,7 +20,8 @@ const DropdownPopularDescription = ({ product, dropdown }) => {
         exitDone: style.hide,
       }}
       mountOnEnter
-      unmountOnExit>
+      unmountOnExit
+    >
       <div>
         <ProductDescriptionShort
           {...{

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import style from "./accountFavourite.module.scss";
-import ProductDescriptionShort from "../../../common/productDescriptionShort/productDescriptionShort";
+import ProductDescriptionShort from "../../../common/ProductDescriptionShort/ProductDescriptionShort";
 import { useHistory } from "react-router-dom";
 import Loading from "../../../common/LoadingComponent/Loading";
-import BackButton from "../../../common/buttonComponent/BackButton";
+import BackButton from "../../../common/ButtonComponent/BackButton";
 import { useSelector } from "react-redux";
 import { getFavourite } from "../../../../store/slices/favourite";
 import {
@@ -11,7 +11,7 @@ import {
   getProductLoadingStatus,
   loadProductByIds,
 } from "../../../../store/slices/product";
-import BasketChevronQuantity from "../../../common/chevrons/BasketChevronQuantity/BasketChevronQuantity";
+import BasketChevronQuantity from "../../../common/Chevrons/BasketChevronQuantity/BasketChevronQuantity";
 import { useAppDispatch } from "../../../../hooks/reduxHooks";
 import { IProduct } from "../../../../ts/models/IProduct";
 

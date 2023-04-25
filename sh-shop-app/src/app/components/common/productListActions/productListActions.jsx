@@ -2,10 +2,10 @@ import React from "react";
 import style from "./productListActions.module.scss";
 import { Link } from "react-router-dom";
 import { ReactComponent as Info } from "../../../../../node_modules/bootstrap-icons/icons/info-lg.svg";
-import AddBasketButtonSmall from "../buttonComponent/addBasketButtonSmall/addBasketButtonSmall";
-import AddFavouriteButtonSmall from "../buttonComponent/addFavouriteButtonSmall/addFavouriteButtonSmall";
-import withBasketAction from "../../../hoc/basketHoc/withBasketAction";
-import withFavouriteAction from "../../../hoc/favouriteHoc/withFavouriteAction";
+import AddBasketButtonSmall from "../ButtonComponent/AddBasketButtonSmall/AddBasketButtonSmall";
+import AddFavouriteButtonSmall from "../ButtonComponent/AddFavouriteButtonSmall/AddFavouriteButtonSmall";
+import withBasketAction from "../../hoc/BasketHoc/withBasketAction";
+import withFavouriteAction from "../../hoc/FavouriteHoc/withFavouriteAction";
 import { useSelector } from "react-redux";
 import { getIsLoggedInStatus } from "../../../store/slices/user";
 
@@ -24,7 +24,8 @@ const ProductListActions = ({ productId, prices }) => {
 
       <Link
         to={`/product/${productId}`}
-        className={style.popular_list_actions__wrap}>
+        className={style.popular_list_actions__wrap}
+      >
         <Info
           className={style.popular_list_actions__icon}
           width="22px"

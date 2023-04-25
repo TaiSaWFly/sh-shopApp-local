@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Button from "../../../common/buttonComponent/Button";
-import TextAreaField from "../../../common/FieldCommonents/textAreaField/textAreaField";
+import Button from "../../../common/ButtonComponent/Button";
+import TextAreaField from "../../../common/FieldCommonents/TextAreaField/TextAreaField";
 import style from "./addReviewForm.module.scss";
 
 const AddReviewForm = ({ onSubmit, user }) => {

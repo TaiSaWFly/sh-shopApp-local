@@ -1,29 +1,35 @@
 import React, { useEffect, useState, ReactElement } from "react";
-import LoadingLogo from "../components/common/LoadingComponent/LoadingLogo";
+import LoadingLogo from "../../components/common/LoadingComponent/LoadingLogo";
 
 // Redux
 import { useSelector } from "react-redux";
 import {
   getCategoryLoadingStatus,
   loadCategory,
-} from "../store/slices/category";
+} from "../../store/slices/category";
 import {
   getCollectionCategoryLoadingStatus,
   loadCollectionCategory,
-} from "../store/slices/collectionCategory";
+} from "../../store/slices/collectionCategory";
 import {
   getNavigateMenuLoadingStatus,
   loadNavigateMenu,
-} from "../store/slices/navigateMenu";
-import { getPopularLoadingStatus, loadPopular } from "../store/slices/popular";
+} from "../../store/slices/navigateMenu";
+import {
+  getPopularLoadingStatus,
+  loadPopular,
+} from "../../store/slices/popular";
 import {
   getProductLengthLoadingStatus,
   loadProductLength,
-} from "../store/slices/product";
-import { getColorLoadingStatus, loadColors } from "../store/slices/color";
-import { getSizeLoadingStatus, loadSizes } from "../store/slices/size";
-import { getCountryLoadingStatus, loadCountry } from "../store/slices/country";
-import { useAppDispatch } from "../hooks/reduxHooks";
+} from "../../store/slices/product";
+import { getColorLoadingStatus, loadColors } from "../../store/slices/color";
+import { getSizeLoadingStatus, loadSizes } from "../../store/slices/size";
+import {
+  getCountryLoadingStatus,
+  loadCountry,
+} from "../../store/slices/country";
+import { useAppDispatch } from "../../hooks/reduxHooks";
 
 interface AppLoaderProps {
   children: ReactElement[];

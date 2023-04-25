@@ -1,8 +1,8 @@
 import React from "react";
 import ComponentContainer from "../../common/ComponentContainer/ComponentContainer";
-import MainTitle from "../../ui/Main/mainTitle/homeTitle";
-import PopularProducts from "../../ui/Main/popularComponents/popularProducts/popularProducts";
-import ShopsNewsLetter from "../../ui/Main/shopsNewsletter/shopsNewsletter";
+import MainTitle from "../../ui/Main/MainTitle/HomeTitle";
+import PopularProducts from "../../ui/Main/PopularComponents/PopularProducts/PopularProducts";
+import ShopsNewsLetter from "../../ui/Main/ShopsNewsletter/ShopsNewsletter";
 
 const MainPage: React.FC = () => {
   return (

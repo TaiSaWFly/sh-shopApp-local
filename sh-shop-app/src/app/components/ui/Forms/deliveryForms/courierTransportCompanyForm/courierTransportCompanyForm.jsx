@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Button from "../../../../common/buttonComponent/Button";
+import Button from "../../../../common/ButtonComponent/Button";
 import CheckBoxField from "../../../../common/FieldCommonents/CheckBoxField/CheckBoxField";
 import TextField from "../../../../common/FieldCommonents/TextField/TextField";
 import style from "./courierTransportCompanyForm.module.scss";

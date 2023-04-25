@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { signupSchema } from "../../../../utils/yupSchema";
-import Button from "../../../common/buttonComponent/Button";
+import Button from "../../../common/ButtonComponent/Button";
 import CheckBoxField from "../../../common/FieldCommonents/CheckBoxField/CheckBoxField";
 import SelectField, {
   initialStateSelectField,

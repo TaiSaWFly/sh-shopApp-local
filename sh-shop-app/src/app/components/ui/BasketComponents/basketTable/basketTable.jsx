@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./basketTable.module.scss";
-import Table from "../../../common/tableComponent/table/table";
+import Table from "../../../common/TableComponent/Table/Table";
 import BasketProductImage from "../basketProductImage/backetProductImage";
 import BasketDecription from "../basketDecription/basketDecription";
 import BasketColor from "../basketColor/basketColor";
 import BasketQuantity from "../basketQuantity/basketQuantity";
-import Button from "../../../common/buttonComponent/Button";
-import Price from "../../../common/priceComponent/price";
+import Button from "../../../common/ButtonComponent/Button";
+import Price from "../../../common/PriceComponent/Price";
 import BasketSize from "../basketSize/basketSize";
 import { useDispatch } from "react-redux";
 import {

@@ -2,7 +2,7 @@ import React from "react";
 import style from "./basketQuantity.module.scss";
 import { ReactComponent as Increment } from "../../../../../../node_modules/bootstrap-icons/icons/plus.svg";
 import { ReactComponent as Decrement } from "../../../../../../node_modules/bootstrap-icons/icons/dash.svg";
-import Button from "../../../common/buttonComponent/Button";
+import Button from "../../../common/ButtonComponent/Button";
 
 const BasketQuantity = ({
   id,

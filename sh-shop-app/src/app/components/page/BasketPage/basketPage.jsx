@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import ComponentContainer from "../../common/ComponentContainer/ComponentContainer";
 import BasketTable from "../../ui/BasketComponents/basketTable/basketTable";
 import style from "./basketPage.module.scss";
-import NextActionDecor from "../../common/nextActionDecor/nextActionDecor";
+import NextActionDecor from "../../common/NextActionDecor/NextActionDecor";
 import TitleComponent from "../../common/TitleComponent/TitleComponent";
-import Button from "../../common/buttonComponent/Button";
+import Button from "../../common/ButtonComponent/Button";
 import BasketChooseDelivery from "../../ui/BasketComponents/basketChooseDelivery/basketChooseDelivery";
 import { useDispatch, useSelector } from "react-redux";
 import {

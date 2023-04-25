@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import ShowMoreButton from "../../components/common/buttonComponent/showMoreButton";
-import SelectField from "../../components/common/FieldCommonents/SelectField/SelectField";
-import NoProductsCaregory from "../../components/ui/CollectionComponents/noProductsCaregory/noProductsCaregory";
-import { getColorForSelect } from "../../store/slices/color";
+import ShowMoreButton from "../../common/ButtonComponent/ShowMoreButton";
+import SelectField from "../../common/FieldCommonents/SelectField/SelectField";
+import NoProductsCaregory from "../../ui/CollectionComponents/noProductsCaregory/noProductsCaregory";
+import { getColorForSelect } from "../../../store/slices/color";
 import {
   getFilterMemoryData,
   saveFilterData,
-} from "../../store/slices/filterMemory";
-import { getProductLengthByParamsIds } from "../../store/slices/product";
-import { getSizeForSelect } from "../../store/slices/size";
-import { filterProductsByOption } from "../../utils/filterProductsByOption";
+} from "../../../store/slices/filterMemory";
+import { getProductLengthByParamsIds } from "../../../store/slices/product";
+import { getSizeForSelect } from "../../../store/slices/size";
+import { filterProductsByOption } from "../../../utils/filterProductsByOption";
 import style from "./withProductFilter.module.scss";
 
 const initialFilterState = {

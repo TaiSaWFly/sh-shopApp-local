@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import Loading from "../components/common/LoadingComponent/Loading";
+import Loading from "../common/LoadingComponent/Loading";
 import {
   getProductByIds,
   getProductLengthLoadingStatus,
   loadProductByIds,
-} from "../store/slices/product";
+} from "../../store/slices/product";
 
 const withProductDispatch =
   (Component) =>

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import style from "./popularProducts.module.scss";
-import PopularListItem from "../popularListItem/popularListItem";
+import PopularListItem from "../PopularListItem/PopularListItem";
 import Loading from "../../../../common/LoadingComponent/Loading";
 import { useHistory } from "react-router-dom";
 import PopularProduct from "../popularProduct/popularProduct";
 import { useSelector } from "react-redux";
 import { getPopular } from "../../../../../store/slices/popular";
-import withProductDispatch from "../../../../../hoc/withProductDispatch";
+import withProductDispatch from "../../../../hoc/withProductDispatch";
 
 const PopularProducts = () => {
   const history = useHistory();

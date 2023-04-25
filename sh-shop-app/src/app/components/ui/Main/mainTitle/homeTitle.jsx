@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./mainTitle.module.scss";
-import Button from "../../../common/buttonComponent/Button";
+import Button from "../../../common/ButtonComponent/Button";
 import { useHistory } from "react-router-dom";
 
 const MainTitle = () => {

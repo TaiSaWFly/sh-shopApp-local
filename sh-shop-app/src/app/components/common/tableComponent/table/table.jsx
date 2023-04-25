@@ -1,7 +1,7 @@
 import React from "react";
-import TableBody from "../tableBody/tableBody";
-import TableFooter from "../tableFooter/tableFooter";
-import TableHeader from "../tableHeader/tableHeader";
+import TableBody from "../TableBody/TableBody";
+import TableFooter from "../TableFooter/TableFooter";
+import TableHeader from "../TableHeader/TableHeader";
 
 const Table = ({ columns, dataBody, dataFooter, children }) => {
   return (

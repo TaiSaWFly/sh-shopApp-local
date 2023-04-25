@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import RenderPrice from "../../../../common/priceComponent/renderPrice/renderPrice";
-import DropdownPopularDescription from "../dropdownPopularDescription/dropdownPopularDescription";
+import RenderPrice from "../../../../common/PriceComponent/RenderPrice/RenderPrice";
+import DropdownPopularDescription from "../DropdownPopularDescription/DropdownPopularDescription";
 import style from "./popularProduct.module.scss";
 
 const PopularProduct = ({ product, redirectToProduct }) => {
@@ -13,10 +13,12 @@ const PopularProduct = ({ product, redirectToProduct }) => {
         <div
           onMouseEnter={() => setDropdown(true)}
           onMouseLeave={() => setDropdown(false)}
-          className={style.popular_product__link}>
+          className={style.popular_product__link}
+        >
           <div
             className={style.popular_product__img}
-            onClick={() => redirectToProduct(_id)}>
+            onClick={() => redirectToProduct(_id)}
+          >
             <img alt="pic" src={require(`/src/${imgUrl}`)} />
             <div className={style.popular_product__imgs}>
               {otherImg.map((img, index) => (

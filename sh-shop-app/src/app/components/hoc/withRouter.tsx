@@ -1,6 +1,6 @@
 import React, { ComponentType } from "react";
 import { Router } from "react-router-dom";
-import history from "../utils/history";
+import history from "../../utils/history";
 
 const withRouter =
   (Component: ComponentType): React.FC =>
