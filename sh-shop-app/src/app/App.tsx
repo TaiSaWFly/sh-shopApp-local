@@ -11,7 +11,7 @@ import AuthLayout from "./components/layouts/AuthLayout/AuthLayout";
 import AccountLayout from "./components/layouts/AccountLayout/AccountLayout";
 import ContactPage from "./components/page/ContactPage/contactPage";
 import ProductCardLayout from "./components/layouts/ProductCardLayout/productCardLayout";
-import ProtectedRoute from "./components/common/protectedRoutes/protectedRoute";
+import ProtectedRoute from "./components/common/ProtectedRoutes/ProtectedRoute";
 import NewArrivalsPage from "./components/page/NewProductsPages/newArrivalsPage";
 import withRedux from "./hoc/withRedux";
 import withRouter from "./hoc/withRouter";
