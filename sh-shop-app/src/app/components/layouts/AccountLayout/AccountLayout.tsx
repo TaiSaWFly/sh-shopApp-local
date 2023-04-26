@@ -11,7 +11,7 @@ import { useSelector } from "react-redux";
 import { getIsLoadingStatusUser, getUser } from "../../../store/slices/user";
 import { IUser } from "../../../ts/models/IUser";
 import EditProfileForm from "../../ui/Forms/EditProfileForm/EditProfileForm";
-import HistoryTable from "../../ui/Account/accountHistory/HistoryTable/HistoryTable";
+import HistoryTable from "../../ui/Account/AccountHistory/HistoryTable/HistoryTable";
 
 const AccountLayout: React.FC = () => {
   const user: IUser = useSelector(getUser());

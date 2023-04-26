@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./aboveHeader.module.scss";
-import AccountLink from "../../Account/accountLink/accountLink";
+import AccountLink from "../../Account/AccountLink/AccountLink";
 import BasketLink from "../../BasketComponents/basketLink/basketLink";
 
 const AboveHeader: React.FC = () => {
