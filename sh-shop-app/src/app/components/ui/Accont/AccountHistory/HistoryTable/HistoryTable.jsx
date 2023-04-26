@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import BackButton from "../../../../common/ButtonComponent/BackButton";
 import Table from "../../../../common/TableComponent/Table/Table";
-import HistoryProducts from "../historyProducts/historyProducts";
+import HistoryProducts from "../HistoryProducts/HistoryProducts";
 import style from "./historyTable.module.scss";
 import { parseDate } from "../../../../../utils/parseDate";
 import Loading from "../../../../common/LoadingComponent/Loading";
