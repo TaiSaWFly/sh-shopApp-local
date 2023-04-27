@@ -8,7 +8,7 @@ import {
   getNavigateMenu,
   getNavigateMenuLoadingStatus,
 } from "../../../../../store/slices/navigateMenu";
-import { INavigateMenu } from "../../../../../ts/models/INavigateMenu";
+import { INavigateMenu } from "../../../../../ts/models/dataModels/INavigateMenu";
 
 const NavList: React.FC = () => {
   const menus: INavigateMenu[] = useSelector(getNavigateMenu());

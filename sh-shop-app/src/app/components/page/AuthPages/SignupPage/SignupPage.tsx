@@ -4,9 +4,7 @@ import { useSelector } from "react-redux";
 import { signupSchema } from "../../../../utils/yupSchema";
 import Button from "../../../common/ButtonComponent/Button";
 import CheckBoxField from "../../../common/FieldCommonents/CheckBoxField/CheckBoxField";
-import SelectField, {
-  initialStateSelectField,
-} from "../../../common/FieldCommonents/SelectField/SelectField";
+import SelectField from "../../../common/FieldCommonents/SelectField/SelectField";
 import TextField from "../../../common/FieldCommonents/TextField/TextField";
 import TitleComponent from "../../../common/TitleComponent/TitleComponent";
 import style from "./signupPage.module.scss";
@@ -15,28 +13,30 @@ import {
   getAuthErrors,
   signUp,
 } from "../../../../store/slices/user";
-import { getCountryForSelect } from "../../../../store/slices/country";
-import { useAppDispatch } from "../../../../hooks/reduxHooks";
+import { useAppDispatch } from "../../../../hooks/ReduxHooks/reduxHooks";
 import { FormChangeArgs } from "../../../../ts/types/globalTypes/FormChangeArgs";
 import { KeyableTypes } from "../../../../ts/types/globalTypes/KeyableTypes";
 import { SelectFieldVariant } from "../../../../ts/enums/FormFieldEnums/SelectFieldVariant";
 import { SelectOption } from "../../../../ts/types/FormFieldTypes/SelectOption";
 import { TextFieldTypeVariant } from "../../../../ts/enums/FormFieldEnums/TextFieldTypeVariant";
+import { IDataFormSignupPage } from "../../../../ts/models/appModels/IDataFormSignupPage";
+import { IUser } from "../../../../ts/models/dataModels/IUser";
+import useSelectOptions from "../../../../hooks/useSelectOptions";
 
 const SignupPage: React.FC = () => {
   const dispatch = useAppDispatch();
+  const { countriesOptions } = useSelectOptions();
   const authErrors = useSelector(getAuthErrors());
 
-  const [data, setData] = useState({
+  const [data, setData] = useState<IDataFormSignupPage>({
     userName: "",
     email: "",
     password: "",
     confirmPassword: "",
-    country: initialStateSelectField,
+    country: null,
     licence: false,
   });
   const [errors, setErrors] = useState<KeyableTypes<string>>({});
-  const countriesOptions: SelectOption[] = useSelector(getCountryForSelect());
 
   useEffect(() => {
     dispatch(clearAuthError());
@@ -76,8 +76,8 @@ const SignupPage: React.FC = () => {
       userName: data.userName,
       password: data.password,
       email: data.email,
-      country: data.country.value,
-    };
+      country: data.country?.value,
+    } as unknown as IUser;
 
     dispatch(signUp(resData));
   };

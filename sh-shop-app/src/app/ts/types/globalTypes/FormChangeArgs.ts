@@ -1,4 +1,4 @@
-export type FormChangeArgs<N, V> = {
-  name: N;
-  value: V;
+export type FormChangeArgs<Name, Value, N = null> = {
+  name: Name;
+  value: Value | N;
 };

@@ -1,23 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
 import TextField from "../../../common/FieldCommonents/TextField/TextField";
 import style from "./editProfileForm.module.scss";
 import Button from "../../../common/ButtonComponent/Button";
 import BackButton from "../../../common/ButtonComponent/BackButton";
 import Loading from "../../../common/LoadingComponent/Loading";
 import { updateUser } from "../../../../store/slices/user";
-import { getCountryForSelect } from "../../../../store/slices/country";
-import SelectField, {
-  initialStateSelectField,
-} from "../../../common/FieldCommonents/SelectField/SelectField";
+import SelectField from "../../../common/FieldCommonents/SelectField/SelectField";
 import { editUserSchema } from "../../../../utils/yupSchema";
-import { IUser } from "../../../../ts/models/IUser";
+import { IUser } from "../../../../ts/models/dataModels/IUser";
 import { SelectOption } from "../../../../ts/types/FormFieldTypes/SelectOption";
 import { KeyableTypes } from "../../../../ts/types/globalTypes/KeyableTypes";
 import { FormChangeArgs } from "../../../../ts/types/globalTypes/FormChangeArgs";
 import { TextFieldTypeVariant } from "../../../../ts/enums/FormFieldEnums/TextFieldTypeVariant";
 import { SelectFieldVariant } from "../../../../ts/enums/FormFieldEnums/SelectFieldVariant";
-import { useAppDispatch } from "../../../../hooks/reduxHooks";
+import { useAppDispatch } from "../../../../hooks/ReduxHooks/reduxHooks";
+import useSelectOptions from "../../../../hooks/useSelectOptions";
 
 interface EditProfileFormProps {
   user: IUser;
@@ -25,12 +22,11 @@ interface EditProfileFormProps {
 
 const EditProfileForm: React.FC<EditProfileFormProps> = ({ user }) => {
   const dispatch = useAppDispatch();
+  const { countriesOptions } = useSelectOptions();
   const redirect = "/account";
 
-  const countriesOptions: SelectOption[] = useSelector(getCountryForSelect());
   const userCountry =
-    countriesOptions.find((c) => c.value === user.country) ||
-    initialStateSelectField;
+    countriesOptions.find((c) => c.value === user.country) || null;
 
   const [data, setData] = useState({
     userName: user.userName,
@@ -70,8 +66,8 @@ const EditProfileForm: React.FC<EditProfileFormProps> = ({ user }) => {
 
     const resData = {
       ...data,
-      country: data.country.value,
-    };
+      country: data.country?.value,
+    } as unknown as IUser;
 
     dispatch(updateUser({ payload: resData, redirect }));
   };
