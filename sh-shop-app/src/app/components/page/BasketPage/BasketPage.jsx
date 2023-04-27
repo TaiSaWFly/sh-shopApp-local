@@ -18,7 +18,7 @@ import {
 import { getIsLoggedInStatus, getUser } from "../../../store/slices/user";
 import BasketOrderStatus from "../../ui/BasketComponents/basketOrderStatus/basketOrderStatus";
 import Loading from "../../common/LoadingComponent/Loading";
-import RenderCollectionLinks from "../../ui/CollectionComponents/renderCollectionLinks/renderCollectionLinks";
+import RenderCollectionLinks from "../../ui/CollectionComponents/RenderCollectionLinks/RenderCollectionLinks";
 
 const BasketPage = () => {
   const dispatch = useDispatch();

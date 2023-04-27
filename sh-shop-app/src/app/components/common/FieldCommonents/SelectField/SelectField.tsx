@@ -6,20 +6,15 @@ import { FormChangeArgs } from "../../../../ts/types/globalTypes/FormChangeArgs"
 import { SelectOption } from "../../../../ts/types/FormFieldTypes/SelectOption";
 
 interface SelectFieldProps {
-  label: string;
+  label?: string;
   name: string;
   options: SelectOption[];
-  value: SelectOption;
+  value: SelectOption | null;
   type: SelectFieldVariant;
   placeholder: string;
   onChange: (target: FormChangeArgs<string, SelectOption>) => void;
-  error: string;
+  error?: string;
 }
-
-export const initialStateSelectField: SelectOption = {
-  value: "",
-  label: "",
-};
 
 const SelectField: React.FC<SelectFieldProps> = ({
   label,
@@ -32,7 +27,7 @@ const SelectField: React.FC<SelectFieldProps> = ({
   error,
 }) => {
   const handleChange = (value: SingleValue<SelectOption>) => {
-    onChange({ name: name, value: value || initialStateSelectField });
+    onChange({ name: name, value: value || null });
   };
 
   const setSelectInvalidClass = (): string => {

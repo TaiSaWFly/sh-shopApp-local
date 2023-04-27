@@ -11,7 +11,7 @@ import {
   getAuthErrors,
   logIn,
 } from "../../../../store/slices/user";
-import { useAppDispatch } from "../../../../hooks/reduxHooks";
+import { useAppDispatch } from "../../../../hooks/ReduxHooks/reduxHooks";
 import { LocationState } from "../../../../ts/types/globalTypes/LocationState";
 import { FormChangeArgs } from "../../../../ts/types/globalTypes/FormChangeArgs";
 import { KeyableTypes } from "../../../../ts/types/globalTypes/KeyableTypes";

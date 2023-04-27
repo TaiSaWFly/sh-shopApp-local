@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TitleComponent from "../../common/TitleComponent/TitleComponent";
 import Loading from "../../common/LoadingComponent/Loading";
-import ProductItems from "../../ui/CollectionComponents/productItems/productItems";
+import ProductItems from "../../ui/CollectionComponents/ProductItems/ProductItems";
 import ComponentContainer from "../../common/ComponentContainer/ComponentContainer";
 import productService from "../../../services/product.service";
 import { useDispatch, useSelector } from "react-redux";

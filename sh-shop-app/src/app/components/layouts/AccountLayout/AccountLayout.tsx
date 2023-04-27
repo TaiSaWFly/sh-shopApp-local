@@ -9,7 +9,7 @@ import AccountFavourite from "../../ui/Account/AccountFavourite/AccountFavourite
 import Loading from "../../common/LoadingComponent/Loading";
 import { useSelector } from "react-redux";
 import { getIsLoadingStatusUser, getUser } from "../../../store/slices/user";
-import { IUser } from "../../../ts/models/IUser";
+import { IUser } from "../../../ts/models/dataModels/IUser";
 import EditProfileForm from "../../ui/Forms/EditProfileForm/EditProfileForm";
 import HistoryTable from "../../ui/Account/AccountHistory/HistoryTable/HistoryTable";
 

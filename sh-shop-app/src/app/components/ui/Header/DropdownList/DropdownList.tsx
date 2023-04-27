@@ -7,7 +7,7 @@ import {
   getCategoryByIds,
   getCategoryLoadingStatus,
 } from "../../../../store/slices/category";
-import { ICategory } from "../../../../ts/models/ICategory";
+import { ICategory } from "../../../../ts/models/dataModels/ICategory";
 
 interface DropdownListProps {
   submenus: string[];

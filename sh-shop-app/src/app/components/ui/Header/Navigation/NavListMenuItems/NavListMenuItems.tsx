@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import style from "./navListMenuItems.module.scss";
 import DropdownList from "../../DropdownList/DropdownList";
 import { Link } from "react-router-dom";
-import { INavigateMenu } from "../../../../../ts/models/INavigateMenu";
+import { INavigateMenu } from "../../../../../ts/models/dataModels/INavigateMenu";
 
 interface NavListMenuItemsProps {
   menu: INavigateMenu;

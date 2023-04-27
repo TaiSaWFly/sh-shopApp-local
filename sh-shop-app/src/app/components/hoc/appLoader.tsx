@@ -29,7 +29,7 @@ import {
   getCountryLoadingStatus,
   loadCountry,
 } from "../../store/slices/country";
-import { useAppDispatch } from "../../hooks/reduxHooks";
+import { useAppDispatch } from "../../hooks/ReduxHooks/reduxHooks";
 
 interface AppLoaderProps {
   children: ReactElement[];
